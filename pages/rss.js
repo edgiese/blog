@@ -2,6 +2,7 @@ import react from 'react'
 import matter from "gray-matter";
 import ReactMarkdown from 'react-markdown'
 import ReactDOMServer from 'react-dom/server'
+import moment from 'moment'
 
 export function getPosts() {
     const context = require.context('../posts', true, /\.md$/)
@@ -51,8 +52,13 @@ export default class Rss extends react.Component {
     }
 }
 
+function rfc822(mydate) {
+    return moment(mydate).format('ddd, DD MMM YYYY HH:mm:ss Z')
+}
+
 const getRssXml = (blogPosts, title, shortSiteDescription) => {
     const { rssItemsXml, latestPostDate } = blogPostsRssXml(blogPosts);
+    const lpdString = rfc822(latestPostDate)
     return `<?xml version="1.0" ?>
   <rss version="2.0">
     <channel>
@@ -60,7 +66,7 @@ const getRssXml = (blogPosts, title, shortSiteDescription) => {
         <link>https://edgiese.com</link>
         <description>${shortSiteDescription}</description>
         <language>en</language>
-        <lastBuildDate>${latestPostDate}</lastBuildDate>
+        <lastBuildDate>${lpdString}</lastBuildDate>
         ${rssItemsXml}
     </channel>
   </rss>`;
@@ -70,10 +76,11 @@ const blogPostsRssXml = (blogPosts) => {
     let latestPostDate = "";
     let rssItemsXml = "";
     blogPosts.forEach(post => {
-        const postDate = Date.parse(post.frontmatter.latestPostDate);
+        const postDate = moment(post.frontmatter.published, 'YYYY-MM-DD hh:mm:ss').toDate();
+        const pd = rfc822(postDate)
         const body = ReactDOMServer.renderToString(<ReactMarkdown children={post.markdownBody} />)
-        if (!latestPostDate || postDate > Date.parse(latestPostDate)) {
-            latestPostDate = post.frontmatter.latestPostDate;
+        if (!latestPostDate || postDate > latestPostDate) {
+            latestPostDate = postDate
         }
         rssItemsXml += `
       <item>
@@ -82,7 +89,7 @@ const blogPostsRssXml = (blogPosts) => {
           http://edgiese.com/posts/${post.frontmatter.slug}
         </link>
 
-        <pubDate>${post.frontmatter.published}</pubDate>
+        <pubDate>${pd}</pubDate>
         <description>
                    <![CDATA[${body}]]>
         </description>
