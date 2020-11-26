@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import getPosts from "../../packages/util1";
 
 import Layout from '../../components/Layout'
 
@@ -39,18 +40,7 @@ export async function getStaticProps({ ...ctx }) {
 }
 
 export async function getStaticPaths() {
-    const blogSlugs = ((context) => {
-        const keys = context.keys()
-        const data = keys.map((key, index) => {
-            let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-
-            return slug
-        })
-        return data
-    })(require.context('../../posts', true, /\.md$/))
-
-    const paths = blogSlugs.map((slug) => `/post/${slug}`)
-
+    const paths = getPosts().map((post) => `/post/${post.slug}`)
     return {
         paths,
         fallback: false,

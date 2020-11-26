@@ -1,11 +1,12 @@
 import Layout from '../components/Layout'
-import PostList from "../components/PostList";
+import RecentPosts from "../components/RecentPosts";
 import getPosts from "../packages/util1"
+import matter from "gray-matter";
 
 const Index = ({ posts, title, description, ...props }) => {
     const children = (
         <main>
-            <PostList posts={posts}/>
+            <RecentPosts posts={posts}/>
         </main>
     )
     return (
@@ -18,9 +19,24 @@ export async function getStaticProps() {
     const configData = await import(`../siteconfig.json`)
     const posts = getPosts()
 
+    // HERE IS WHERE YOU PROBABLY WANT TO SORT AND TRIM THE POSTS
+
+    const content = await Promise.all(posts.map(async p => {
+        const c = await import(`../../posts/${p.slug}.md`)
+        return Object.assign({content: c}, p)
+    }))
+
+    const posts_plus = content.map(post => {
+        const data = matter(post.content.default);
+        return Object.assign({
+            frontmatter: data.data,
+            markdownBody: data.content,
+        }, post)
+    })
+
     return {
         props: {
-            posts,
+            posts: posts_plus,
             title: configData.default.title,
             description: configData.default.description,
         },
