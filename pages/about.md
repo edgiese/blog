@@ -1,4 +1,4 @@
-## About this Blog
+## About this Web Log
 
 I have been fascinated with blogging since it first sprang on the schene decades ago.  I was an early adopter and enthusiastic reader of many blogs, and still am.  I dipped my toe into commenting, and made a few tries at writing my own blog, but not much came of those efforts.
 

@@ -1,6 +1,7 @@
 ---
 title: 'Thankful to Get Started'
 published: '2020-11-25 21:25:00'
+category: Technology
 ---
 
 I just started setting up this blog yesterday, and I've made good progress so far.  There is some learning curve for me because Javascript is definitely not my strongest language these days, and there are some confusing concepts in `next.js`.  Still, I finished working yesterday at noon and got a few hours in the evening to start a tutorial, and having finished that, I started polishing the code I wound up with.

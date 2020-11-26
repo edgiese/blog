@@ -1,6 +1,7 @@
 ---
 title: 'In Praise of IDEs'
 published: '2020-11-26 11:25:00'
+category: Technology
 ---
 
 At one time, I was not a believer in IDEs or "Integrated Development Environments."  I learned how to use vim, which I still love, and my early work was on PHP.  There were web developers back in the day that bragged that all they needed was notepad.  While never buying into that extremism, it seemed enlightened to use open source software to develop open source software.  A great friend tried to sell me on PHPStorm, but even when I got a free copy at a meetup, I didn't use it.

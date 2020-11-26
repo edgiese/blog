@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Header from './Header'
 import Meta from './Meta'
-import { Container, Row, Col } from 'react-bootstrap'
+import Footer from './Footer'
 // noinspection ES6UnusedImports
 import styles from 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Layout({ children, pageTitle, description }) {
     return (
@@ -21,7 +22,7 @@ export default function Layout({ children, pageTitle, description }) {
                     <Col xs={3}><Meta /></Col>
                 </Row></Container>
                 <Container><Row><Col>
-                    <footer>Built by me!</footer>
+                    <Footer />
                 </Col></Row></Container>
             </section>
         </>

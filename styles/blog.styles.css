@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great:regular&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite:regular&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:bold&subset=latin,latin-ext');
+
+h1.blogtitle a {
+    color: black;
+    font-family: "Fredericka the Great", sans-serif;
+    font-size: 60px;
+}
+
+div.meta h2 {
+    color: black;
+    font-family: "Fredericka the Great", sans-serif;
+    font-size: 30px;
+}
+
+div.meta nav a {
+    color: black;
+    font-family: "Special Elite", monospace;
+    font-size: 18px;
+}
+
+p.description {
+    color: black;
+    font-family: "Special Elite", monospace;
+    font-size: 18px;
+}
+
+article h2 {
+    color: darkred;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 12px;
+}
+
+article h5 {
+    color: darkred;
+    font-family: "Special Elite", monospace;
+    font-size: 16px;
+}
+
+footer hr {
+    color: darkred;
+}
+
+p.footer {
+    color: darkred;
+    font-family: "Special Elite", monospace;
+    font-size: 16px;
+}

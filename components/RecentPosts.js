@@ -7,10 +7,11 @@ export default function RecentPosts({ posts }) {
             {!posts && <div>No posts!</div>}
             <div>
                 {posts &&
-                posts.map((post) => {
+                posts.map(post => {
                     return (
                         <article key={post.slug}>
                             <h2>{post.frontmatter.title}</h2>
+                            <h5>Posted on {post.frontmatter.published} in {post.frontmatter.category}</h5>
                             <div>
                                 <ReactMarkdown source={post.markdownBody} />
                             </div>
