@@ -3,23 +3,8 @@ import matter from "gray-matter";
 import ReactMarkdown from 'react-markdown'
 import ReactDOMServer from 'react-dom/server'
 import moment from 'moment'
+import getPosts from '../packages/util1'
 
-export function getPosts() {
-    const context = require.context('../posts', true, /\.md$/)
-    const keys = context.keys()
-    const values = keys.map(context)
-
-    return keys.map((key, index) => {
-        let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-        const value = values[index]
-        const document = matter(value.default)
-        return {
-            frontmatter: document.data,
-            markdownBody: document.content,
-            slug,
-        }
-    })
-}
 
 export default class Rss extends react.Component {
     static async getInitialProps({ res }) {
@@ -86,7 +71,7 @@ const blogPostsRssXml = (blogPosts) => {
       <item>
         <title>${post.frontmatter.title}</title>
         <link>
-          http://edgiese.com/posts/${post.frontmatter.slug}
+          http://edgiese.com/post/${post.slug}
         </link>
 
         <pubDate>${pd}</pubDate>

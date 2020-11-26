@@ -1,17 +1,14 @@
-import Link from 'next/link'
 
-export default function Header() {
+export default function Header({title, description, ...props}) {
     return (
         <>
             <header className="header">
-                <nav className="nav">
-                    <Link href="/">
-                        <a>My Blog</a>
-                    </Link>
-                    <Link href="/about">
-                        <a>About</a>
-                    </Link>
-                </nav>
+                <h1>
+                    <a href="/">{title}</a>
+                </h1>
+                <p className="description">
+                    {description}
+                </p>
             </header>
         </>
     )

@@ -1,6 +1,5 @@
 ---
 title: 'Hello, world!'
-slug: 'hello-world'
 published: '2020-11-25 07:25:00'
 ---
 
