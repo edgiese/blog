@@ -5,7 +5,8 @@ export default function getPosts() {
     const keys = context.keys()
     const values = keys.map(context)
 
-    return keys.map((key, index) => {
+    // noinspection UnnecessaryLocalVariableJS
+    const posts = keys.map((key, index) => {
         let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
         const value = values[index]
         const document = matter(value.default)
@@ -15,4 +16,7 @@ export default function getPosts() {
             slug,
         }
     })
+
+    // HERE IS WHERE YOU PROBABLY WANT TO SORT AND TRIM THE POSTS
+    return posts;
 }

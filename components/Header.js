@@ -1,5 +1,5 @@
 
-export default function Header({title, description, ...props}) {
+export default function Header({title, description}) {
     return (
         <>
             <header className="header">
