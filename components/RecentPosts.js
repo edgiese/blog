@@ -13,7 +13,7 @@ export default function RecentPosts({ posts }) {
                             <h2>{post.frontmatter.title}</h2>
                             <h5>Posted on {post.frontmatter.published} in {post.frontmatter.category}</h5>
                             <div>
-                                <ReactMarkdown source={post.markdownBody} />
+                                <ReactMarkdown source={post.markdownBody} allowDangerousHtml />
                             </div>
                         </article>
                     )

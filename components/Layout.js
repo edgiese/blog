@@ -18,7 +18,7 @@ export default function Layout({ children, pageTitle, description }) {
                     <Header title={pageTitle} description={description} />
                 </Col></Row></Container>
                 <Container><Row>
-                    <Col className="content">{children}</Col>
+                    <Col xs={9} className="content">{children}</Col>
                     <Col xs={3}><Meta /></Col>
                 </Row></Container>
                 <Container><Row><Col>
