@@ -40,6 +40,12 @@ article h5 {
     font-size: 16px;
 }
 
+article blockquote {
+    background-color: #eaeaea;
+    padding: 1em;
+    margin: 1em;
+}
+
 footer hr {
     color: darkred;
 }

@@ -11,6 +11,18 @@ export default function Meta() {
                         <a>About this Web Log</a>
                     </Link>
                 </nav>
+                <br />
+                <h2>Blog Roll</h2>
+                <nav className="nav">
+                    <Link href="http://brokenchainsblog.com">
+                        <a>Broken Chains</a>
+                    </Link>
+                </nav>
+                <nav className="nav">
+                    <Link href="http://goodlifeodyssey.com">
+                        <a>Good Life Odyssey</a>
+                    </Link>
+                </nav>
             </div>
         </>
     )
