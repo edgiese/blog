@@ -14,7 +14,8 @@ export default function getPosts(num_to_return) {
             markdownBody: document.content,
             slug,
         }
-    }).sort((a, b) => {
+    })
+    posts.sort((a, b) => {
         // sort from greater to lesser
         if (a.frontmatter.published > b.frontmatter.published)
             return -1;
