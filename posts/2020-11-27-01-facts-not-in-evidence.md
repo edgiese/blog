@@ -1,5 +1,6 @@
 ---
 title: 'Facts not in Evidence'
+summary: 'Response to a question about good works and righteousness'
 published: '2020-11-27 10:00:00'
 category: Spirituality
 ---

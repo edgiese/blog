@@ -1,5 +1,6 @@
 ---
 title: 'In Praise of IDEs'
+summary: 'How I learned to embrace integrated development environments'
 published: '2020-11-26 11:25:00'
 category: Technology
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'Thankful to Get Started'
+summary: 'First blog post with brief status'
 published: '2020-11-25 21:25:00'
 category: Miscellaneous
 ---
