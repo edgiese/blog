@@ -1,7 +1,7 @@
 ---
 title: 'Another Dialog on Making America Christian'
 summary: 'A continuation of a dialog from another blog on the question of Separation of Church and State and religious freedom'
-published: '2021-05-21 22:30:00'
+published: '2021-05-23 22:30:00'
 category: Culture
 ---
 
@@ -19,7 +19,7 @@ bluster during our last coversation.  I'm still thinking it would be
 consistent for a Christian to want this, regardless of anyone's fondness
 for the U.S. Constitution.
 
-**Aaron**:  Well, it's hard.  I'd like to just quote the Bible, but you see, 
+**Aaron**:  Well, it's hard.  I'd like just to quote the Bible, but  
 the New Testament was completed while Christians had no political power
 at all.  In fact, persecution was more common during the apostolic age
 than anything like power.  So the Bible doesn't give advice to Christian
@@ -35,7 +35,8 @@ are other passages as well.  But none of them ever say to take over the
 government.  From this, I'd say it is not recommended that a Christian
 actively try to take over the government.
 
-**Dijon**: Respect those in authority, sure.  But that doesn't mean one can't try to take over, right?
+**Dijon**: Respect those in authority, sure.  But that doesn't mean 
+one can't try to take over, right?
 
 **Aaron**:  Come on.  Do you think you should pray for those in authority at
 the same time you are trying to take their jobs from them?
@@ -50,7 +51,7 @@ or laws, any more than one could move a star in the sky.  What the Bible
 told the early Christians was that the secular authorities were also agents
 of God, so that their "stars" were also to be viewed as unchangeable.
 
-**Dijon**:  That seems to make the Christians look like they _enjoy_ being
+**Dijon**:  That seems to make the Christians look like they _enjoyed_ being
 powerless.  So, you seem to be trying to avoid my question simply by
 saying that Christians should not seek authority.  OK, I'll do one better, 
 then.  What if a Christian woke up and found herself in authority?  Like
@@ -59,9 +60,7 @@ emperor, but now he was the emperor and a Christian.  So what was he
 supposed to do?
 
 **Aaron**: As I said, the Bible did very little directly to guide someone
-like Constantine.  The problem was, Christians were pretty much all powerless
-while it was written, with a few exceptions, so there is not much advice
-given to them.  But historically there have been three different solutions
+like Constantine.  But historically there have been three different solutions
 that Christians have used to answer the question.
 
 **Dijon**:  Now we're getting somewhere!  So what was the first solution?
@@ -73,7 +72,7 @@ move.  The first solution might be called _aligning the stars._  In short,
 it says that the Christian ruler's job is to make the earthly laws line
 up as closely as possible with God's laws.
 
-**Dijon**:  AHA!  I knew it!  That is pretty much to make the country Christian,
+**Dijon**:  Aha!  I knew it!  That is pretty much to make the country Christian,
 as I have been saying!  So, that brings our conversation to a close... oh,
 but wait, you said there were two others.  And I suppose you prefer one of
 them.  What was the second?
@@ -83,13 +82,13 @@ in a position of earthly authority, you should surrender it, because it is
 only a matter of time before you were corrupted as the world is.
 
 **Dijon**:  This is kind of cheating.  You can't say that the answer to 
-taking over the government is to not take over the government.  Plus, I'm not
+taking over the government is not to take over the government.  Plus, I'm not
 sure I agree that any real people would do this.  Weren't you saying just
 yesterday that we have to be practical?  Which groups ever did this?  I'm 
 assuming that the Roman church is an example of the first solution.
 
 **Aaron**:  You are right about the Roman church, although you
-could include Calvin's Geneval in this category.  And examples of the second
+could include Calvin's Geneva in this category.  And examples of the second
 group can be found among the anabaptists and their heirs, like the Mennonites
 and the Amish.
 
@@ -99,7 +98,7 @@ to say we should follow?
 
 **Aaron**:  No, not actually.  Because, you see, if you think about it, there
 is not really any difference between the Amish and the Catholics in this
-matter of aligning the starts.
+matter of aligning the stars.
 
 **Dijon**: Wait, I thought you said one group said align the stars, and the
 other said to abdicate.
@@ -107,19 +106,18 @@ other said to abdicate.
 **Aaron**:  But the abdication meant to withdraw into small communities, 
 separate from the world, almost like a monastery enlarged to a town.  Within
 these communities, they thought they could do an even better job of
-aligning the constellations.  So, when you think about it, the abdicators
-are just as enthusiastic about aligning constellations, but just more
+aligning the stars.  So, when you think about it, the abdicators
+are just as enthusiastic about aligning stars, but just more
 pessimistic about doing it for large groups of people.
 
 **Dijon**:  You really did seem to have some revelation.  Just last night
 you were saying all kinds of things about not wanting to force others into
-your beliefs, and now it's all about lining up stars and constellations.
+your beliefs, and now it's all about lining up stars.
 But I imagine you've saved the one you actually agree with to last.
 
-**Aaron**:  Of course, who wouldn't do that?  I've gotten you to listen to
-me, right?  The last group of Christians said that God's will regarding
-the running of the world is hidden, unlike His revealed Word for the church,
-and the two should not really mix.  The revealed Word is, in the end, 
+**Aaron**:  Of course!  The last group of Christians said that God's will regarding
+the running of the world is hidden, unlike His revealed will for the church,
+and the two should not really mix.  The revealed will (His Word) is, in the end, 
 all about grace and forgiveness, which makes a beautiful way of running
 a church, but a pretty impractical way of running a country.
 
