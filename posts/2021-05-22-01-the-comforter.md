@@ -16,8 +16,8 @@ category: Spirituality
 _Note:  When I preached this sermon, I had as an illustration a birthday cake for the church with about 100 candles on -- 
 a candle for 20 years._
 
-Grace, mercy, and peace to you from God the Father and from our Lord and Savior
-Jesus Christ.  Our text is the gospel reading for today that we read just
+Grace, mercy, and peace to you from God our Father and from our Lord and Savior
+Jesus Christ.  Our text is the gospel reading for today that we heard just
 a few minutes ago, and I want to start by continuing, in a more grown-up way,
 the children's sermon that you heard, too.  On the occasion of a birthday,
 we who are a little older than those kids are might be inclined to look at
@@ -92,7 +92,7 @@ I think it is a great time, as we remember the coming of the Holy Spirit,
 to think that this same Spirit is active in our own time.
 
 Pastor Ely preached last week from the same portion of John's gospel as 
-we read today.  Our readings don't alway smove forward; in fact, last week's
+we read today.  Our readings don't always move forward; in fact, last week's
 reading actually comes after today's.  But Pastor Ely spoke about how
 John was remembering Jesus and writing his Gospel for people who felt that
 the world was a hostile place for their beliefs.  By the time John was
@@ -221,13 +221,3 @@ Christians through the years have sung beautiful songs, like "we shall
 overcome."  It is true, we "shall," by God's grace.  But with the Helper
 at our side, it is also true that we _have_ overcome.  Your hope is
 in front of you!  Let's march out with it in confidence.  Amen.
-
-
-
-
-
-
-
-
-
-aa

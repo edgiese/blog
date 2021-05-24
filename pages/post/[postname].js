@@ -9,9 +9,9 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
     if (!frontmatter) return <></>
 
     return (
-        <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+        <Layout pageTitle={`${siteTitle}`}>
             <Link href="/">
-                <a>Back to post list</a>
+                <a>Go to Home Page</a>
             </Link>
             <article>
                 <h1>{frontmatter.title}</h1>
