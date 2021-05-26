@@ -25,6 +25,7 @@ export default function Layout({ children, pageTitle, description }) {
                     <Footer />
                 </Col></Row></Container>
             </section>
+
         </>
     )
 }
