@@ -1,19 +1,19 @@
 import Layout from '../components/Layout'
-import RecentPosts from "../components/RecentPosts";
 import getPosts from "../packages/util1"
+import PostList from "../components/PostList";
 
-const Index = ({ posts, title, description }) => {
+const PostTOC = ({ posts, title, description }) => {
     const children = (
         <main>
-            <RecentPosts posts={posts}/>
+            <p>I plan to improve this list by making it a sortable, filterable table with synopses, dates, and categories.  This will also be where <strong>search</strong> gets done.</p>
+            <PostList posts={posts}/>
         </main>
     )
     return (
-        <Layout children={children} pageTitle={title} description={description} setup_comments={true} />
+        <Layout children={children} pageTitle={title} description={description} />
     )
 }
-
-export default Index
+export default PostTOC
 
 export async function getStaticProps() {
     const configData = await import(`../siteconfig.json`)

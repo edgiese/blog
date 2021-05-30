@@ -1,13 +1,12 @@
 import MarkDown from 'react-markdown'
-import PostList from "../components/PostList";
 import Layout from "../components/Layout";
 
 const About = ({ title, description, about_body_md, ...props }) => {
     const children = (
         <>
-        <main>
+        <main><article>
             <MarkDown children={about_body_md} />
-        </main>
+        </article></main>
         </>
     )
     return (

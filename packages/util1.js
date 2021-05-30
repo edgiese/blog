@@ -1,5 +1,18 @@
 import matter from "gray-matter";
 
+export function getPages() {
+    const context = require.context('../page_entries', true, /\.md$/)
+    const keys = context.keys()
+    const values = keys.map(context)
+
+    return keys.map((key, index) => {
+        let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
+        return {
+            slug,
+        }
+    });
+}
+
 export default function getPosts(num_to_return) {
     const context = require.context('../posts', true, /\.md$/)
     const keys = context.keys()

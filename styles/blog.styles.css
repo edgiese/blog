@@ -2,42 +2,189 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite:regular&subset=latin,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:bold&subset=latin,latin-ext');
 
+/* container system -- puts blog roll at bottom below pc browser width */
+div#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.1rem 2rem;
+    padding: 0rem 1rem;
+    max-width: 65rem;
+    margin: auto;
+    position: relative;
+}
+
+header, footer, nav { grid-column: 1 / span 4; }
+main { grid-column: 1 / span 3; }
+aside { grid-column: span 1; }
+
+@media(max-width: 60em) {
+    main {
+        grid-column: 1 / span 4;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+    }
+}
+
+/* nav menu items -- on single line for pc, below drop down below that */
+nav input {
+    display: none;
+}
+nav {
+    position: absolute;
+    right: 0;
+}
+
+nav .menu_line {
+    display: none;
+}
+nav li {
+    display: inline;
+}
+nav li:hover {
+    background-color: lightgray;
+}
+nav li a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+@media(max-width: 60em) {
+    nav .menu_line {
+        display: block;
+        text-align: right;
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+    }
+    nav label {
+        cursor: pointer;
+        height: 2em;
+        width: 2em;
+        padding: 0;
+    }
+
+    nav input ~ ul {
+        visibility: hidden;
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 100;
+        background-color: white;
+        border: 1px solid gray;
+        padding: 0;
+    }
+
+    nav input ~ p label {
+        background-image: url("menu1.svg");
+        background-size: cover;
+    }
+    nav input:checked ~ p label {
+        background-image: url("menu2.svg");
+    }
+
+    nav input:checked ~ ul {
+        visibility: visible;
+        transition: transform 0.3s ease-in-out;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    nav li {
+        display: block;
+        list-style-type: none;
+    }
+}
+
+
+nav li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
 h1.blogtitle a {
     color: black;
     font-family: "Fredericka the Great", sans-serif;
-    font-size: 60px;
+    font-size: 4rem;
+}
+@media(max-width: 50em) {
+    h1.blogtitle a {
+        font-size: 3.5rem;
+    }
+}
+@media(max-width: 44em) {
+    h1.blogtitle a {
+        font-size: 3rem;
+    }
+}
+@media(max-width: 38em) {
+    h1.blogtitle a {
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 28em) {
+    h1.blogtitle a {
+        font-size: 2rem;
+    }
 }
 
-div.meta h2 {
+h1.blogtitle a:hover {
+    text-decoration:none;
+}
+
+aside h2 {
     color: black;
     font-family: "Fredericka the Great", sans-serif;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
-
-div.meta nav a {
+aside ul {
+    padding: 0;
+}
+aside ul li {
+    list-style-type: none;
+}
+aside a {
     color: black;
     font-family: "Special Elite", monospace;
     font-size: 18px;
 }
 
 p.description {
-    color: black;
+    color: darkred;
     font-family: "Special Elite", monospace;
     font-size: 18px;
 }
 
-article h2 {
+article h1, article h2, article h3, article h4 {
     color: darkred;
     font-family: "Merriweather", serif;
     font-weight: bold;
-    font-size: 24px;
-    padding-top: 12px;
+}
+article h1 {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+article h2 {
+    font-size: 1.8rem;
+    padding-top: 0.9rem;
+}
+article h3 {
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+}
+article h4 {
+    font-size: 1.2rem;
+    padding-top: 0.6rem;
 }
 
 article h5 {
-    color: darkred;
-    font-family: "Special Elite", monospace;
-    font-size: 16px;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+article code {
+    color: black;
+    font-size: 100%;
 }
 
 article blockquote {
