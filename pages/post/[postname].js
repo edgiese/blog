@@ -5,7 +5,8 @@ import getPosts from "../../packages/util1";
 
 import Layout from '../../components/Layout'
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+export default function BlogPost({ siteTitle, frontmatter, markdownBody, postname }) {
+    const my_href = "https://edgiese.com" + "/post/" + postname;
     const children = (!frontmatter) ? (
         <main>
             <article>
@@ -17,7 +18,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
             <article>
                 <h1>{frontmatter.title}</h1>
                 <p className={"description"}>Posted on {frontmatter.published} in {frontmatter.category}</p>
-                <ReactMarkdown source={markdownBody} />
+                <div>
+                    <ReactMarkdown source={markdownBody} allowDangerousHtml />
+                </div>
+                <div className="fb-comments" data-href={my_href} data-width="80%" data-numposts="5"/>
             </article>
         </main>
     )
@@ -40,6 +44,7 @@ export async function getStaticProps({ ...ctx }) {
             siteTitle: config.title,
             frontmatter: data.data,
             markdownBody: data.content,
+            postname: postname
         },
     }
 }

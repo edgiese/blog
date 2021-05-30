@@ -6,8 +6,8 @@ export default function RecentPosts({ posts }) {
         <div>
             {!posts && <div>No posts!</div>}
             <div>
-                {posts &&
-                posts.map(post => {
+                {posts && posts.map(post => {
+                    const my_href = "https://edgiese.com" + "/post/" + post.slug;
                     return (
                         <article key={post.slug}>
                             <h1>{post.frontmatter.title}</h1>
@@ -15,6 +15,7 @@ export default function RecentPosts({ posts }) {
                             <div>
                                 <ReactMarkdown source={post.markdownBody} allowDangerousHtml />
                             </div>
+                            <div className="fb-comments" data-href={my_href} data-width="80%" data-numposts="5"/>
                         </article>
                     )
                 })}

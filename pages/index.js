@@ -9,9 +9,10 @@ const Index = ({ posts, title, description }) => {
         </main>
     )
     return (
-        <Layout children={children} pageTitle={title} description={description} />
+        <Layout children={children} pageTitle={title} description={description} setup_comments={true} />
     )
 }
+
 export default Index
 
 export async function getStaticProps() {
