@@ -20,6 +20,7 @@ export default function RecentPosts({ posts }) {
                     )
                 })}
             </div>
+            <p><a href={"/post_list"}>... View list of all posts</a></p>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Aside from './Aside'
 import Footer from './Footer'
 // noinspection ES6UnusedImports
 import styles from 'bootstrap/dist/css/bootstrap.min.css'
+import process from "process";
 
 export default function Layout({ children, pageTitle, description, setup_comments=false }) {
     // noinspection CheckTagEmptyBody

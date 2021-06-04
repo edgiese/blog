@@ -17,7 +17,7 @@ export default Index
 
 export async function getStaticProps() {
     const configData = await import(`../siteconfig.json`)
-    const posts = getPosts()
+    const posts = getPosts(8)
 
     return {
         props: {

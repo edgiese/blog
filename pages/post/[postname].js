@@ -27,7 +27,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody, postnam
     )
 
     return (
-        <Layout children={children} pageTitle={siteTitle}>
+        <Layout children={children} pageTitle={siteTitle} setup_comments={true} >
         </Layout>
     )
 }

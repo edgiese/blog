@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:bold&subset=latin,latin-ext');
 
 /* container system -- puts blog roll at bottom below pc browser width */
+div#__next {
+    background-color: #eeeeee;
+}
 div#container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -11,6 +14,10 @@ div#container {
     max-width: 65rem;
     margin: auto;
     position: relative;
+    background-color: white;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    box-shadow: #888888
 }
 
 header, footer, nav { grid-column: 1 / span 4; }
@@ -18,6 +25,14 @@ main { grid-column: 1 / span 3; }
 aside { grid-column: span 1; }
 
 @media(max-width: 60em) {
+    div#__next {
+        background-color: white;
+    }
+    div#container {
+        box-shadow: none;
+        border: none;
+    }
+
     main {
         grid-column: 1 / span 4;
     }
