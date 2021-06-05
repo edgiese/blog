@@ -21,7 +21,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody, postnam
                 <div>
                     <ReactMarkdown source={markdownBody} allowDangerousHtml />
                 </div>
-                <div className="fb-comments" data-href={my_href} data-width="80%" data-numposts="5"/>
+                <div className="fb-comments" data-href={my_href} data-width="560" data-numposts="5"/>
             </article>
         </main>
     )
