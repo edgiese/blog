@@ -19,6 +19,7 @@ export default function Layout({ children, pageTitle, description, setup_comment
             js.nonce = 'vQTDnsLQ'
             window.ed_js=js
             fjs.parentNode.insertBefore(js, fjs);
+            window.FB.XFBML.parse();
         }
     }
     // noinspection CheckTagEmptyBody
